@@ -1,25 +1,16 @@
-var builder = WebApplication.CreateBuilder(args);
+using Microsoft.AspNetCore.Mvc;
 
-// Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+[CodexController]
+[Route("/Codex")]
+public class Codex : CodexBase
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    [HttpGet("Codex/menu")]
+
+    public string GetIndex()
+    {
+        var html = System.IO.File.ReadAllText(@".Pages\index.html");
+
+        return base.Content(html, text/html)
+    }
+
 }
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();
