@@ -26,3 +26,5 @@ create table Post(
 	Momento datetime not null
 );
 go
+/*Set-Executionpolicy -Scope CurrentUser -ExecutionPolicy  Bypass */
+
