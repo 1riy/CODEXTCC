@@ -27,4 +27,3 @@ create table Post(
 );
 go
 /*Set-Executionpolicy -Scope CurrentUser -ExecutionPolicy  Bypass */
-
