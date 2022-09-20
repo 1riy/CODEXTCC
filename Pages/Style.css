@@ -13,7 +13,7 @@ body {
 .box {
     width: 500px;
     padding: 40px;
-    position: absolute;
+    position: absolute; 
     top: 10%;
     left: 35%;
     border-radius: 24px;
@@ -144,7 +144,7 @@ a.socialIcon:hover,
     transition: all 0.8s
 }
 
-.logo h1 {
-    text-align: center;
-
+.Logo h1 {
+    padding-left: 25px;
+    font-family: t;
 }
