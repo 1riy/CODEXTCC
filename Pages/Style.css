@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+* {
+    margin: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -145,6 +151,9 @@ a.socialIcon:hover,
 }
 
 .Logo h1 {
-    padding-left: 25px;
-    font-family: t;
+    padding: 10px 0px 0px 10px;
+    font-size: 52px;z
+    color: white;
+    /* font-family: 'Bungee', cursive; */
+    font-family: 'Courier New', Courier, monospace;
 }
